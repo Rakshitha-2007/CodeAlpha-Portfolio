@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial;
+  background:#0f172a;
+  color:white;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#111827;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  color:cyan;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:cyan;
+}
+
+section{
+  padding:100px 10%;
+}
+
+.home{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  min-height:100vh;
+}
+
+.content h1{
+  font-size:50px;
+}
+
+.content h3{
+  color:cyan;
+  margin:10px 0;
+}
+
+.content p{
+  margin-bottom:20px;
+  line-height:1.6;
+}
+
+.btn{
+  background:cyan;
+  color:black;
+  padding:12px 25px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.image img{
+  width:300px;
+  border-radius:50%;
+  border:5px solid cyan;
+}
+
+.about,
+.skills,
+.projects,
+.contact{
+  text-align:center;
+}
+
+.skill-box,
+.project-box{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+
+.card,
+.project-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+  width:250px;
+  transition:0.4s;
+}
+
+.card:hover,
+.project-card:hover{
+  transform:translateY(-10px);
+}
+
+.card i{
+  font-size:50px;
+  color:cyan;
+  margin-bottom:15px;
+}
+
+form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:30px;
+}
+
+input,
+textarea{
+  padding:15px;
+  border:none;
+  border-radius:10px;
+}
+
+button{
+  padding:15px;
+  border:none;
+  background:cyan;
+  font-weight:bold;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111827;
+}
+
+@media(max-width:768px){
+
+  .home{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .image img{
+    margin-top:30px;
+  }
+
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+}
